@@ -1090,6 +1090,16 @@ span.white {
   width: 150px;
   height: 150px;
 }
+.prev-edition img {
+  position: absolute;
+  z-index: 3;
+  bottom: 15px;
+  left: 15px;
+}
+.prev-edition:hover img, 
+.prev-edition:hover h2 {
+  transform: scale(1.1);
+}
 
 .sponsorimg {
   max-width: 100%;
