@@ -800,10 +800,22 @@ section.curvy {
   width: 100%;
   height: auto;
   margin-top: 100px;
-
   display: none;
 }
 
+.pos-absolute {
+  position: absolute;
+}
+.ey {
+  margin-top: 40px;
+}
+.ey small {
+  color: #08112b;
+  margin-right: 10px;
+}
+.ey img {
+  width: 35px;
+}
 @media (min-width: 768px) {
 
   .absolute {
