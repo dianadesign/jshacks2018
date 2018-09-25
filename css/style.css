@@ -809,12 +809,14 @@ section.curvy {
 .ey {
   margin-top: 40px;
 }
-.ey small {
+.ey span {
   color: #08112b;
   margin-right: 10px;
+  font-size: 24px;
+  
 }
 .ey img {
-  width: 35px;
+  width: 70px;
 }
 @media (min-width: 768px) {
 
@@ -1050,6 +1052,9 @@ span.white {
 }
 .m-a-0 {
   margin: 0;
+}
+.mt-5em {
+  margin-top: 5em;
 }
 .mt-5 {
   margin-top: 50px;
