@@ -35,6 +35,40 @@ $(document).ready(function () {
       }
     });
 
+  // Opera 8.0+
+  var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+
+  // Firefox 1.0+
+  var isFirefox = typeof InstallTrigger !== 'undefined';
+
+  // Safari 3.0+ "[object HTMLElementConstructor]" 
+  var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
+    navigator.userAgent &&
+    navigator.userAgent.indexOf('CriOS') == -1 &&
+    navigator.userAgent.indexOf('FxiOS') == -1;
+
+  // Internet Explorer 6-11
+  var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+  // Edge 20+
+  var isEdge = !isIE && !!window.StyleMedia;
+
+  // Chrome 1+
+  var isChrome = !!window.chrome && !!window.chrome.webstore;
+
+  // Blink engine detection
+  var isBlink = (isChrome || isOpera) && !!window.CSS;
+
+  function removeRellax() {
+    var rellaxobj = document.getElementsByClassName('rellax');
+    while (rellaxobj[0]) {
+      rellaxobj[0].classList.remove('rellax');
+    }
+  }
+
+  if (isFirefox == true || isSafari == true || isEdge == true || isIE == true || isBlink == true) {
+    removeRellax();
+  }
 
 
 });
