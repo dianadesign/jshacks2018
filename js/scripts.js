@@ -66,7 +66,7 @@ $(document).ready(function () {
     }
   }
 
-  if (isFirefox == true || isSafari == true || isEdge == true || isIE == true || isBlink == true) {
+  if (isFirefox == true || isSafari == true || isEdge == true || isIE == true) {
     removeRellax();
   }
 
