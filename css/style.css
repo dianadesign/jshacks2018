@@ -17,6 +17,9 @@
     opacity: 1;
   }
 }
+* {
+  outline: none;
+}
 html,
 body {
   position: relative;
